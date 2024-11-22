@@ -1,0 +1,121 @@
+/* Základní stylování */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #202124;
+}
+
+.nav-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #4285F4;
+    color: white;
+}
+
+.search-container {
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4285F4;
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.5);
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+input[type="submit"], .lucky-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"] {
+    background-color: #4285F4;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #3367D6;
+    transform: scale(1.05);
+}
+
+.lucky-button {
+    background-color: #F4B400;
+    color: white;
+}
+
+.lucky-button:hover {
+    background-color: #DB9200;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #666;
+}
